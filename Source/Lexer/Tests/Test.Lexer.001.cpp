@@ -13,8 +13,8 @@ void Test_Lexer_001_BasicKeywords() {
 
     const auto Tokens = Lexer.Tokenize();
 
-    for (int i = 0; i < Tokens.size(); ++i) {
-        std::cout << Tokens[i].ToString() << "\n";
+    for (const auto & Token : Tokens) {
+        std::cout << Token.ToString() << "\n";
     }
 
     assert(Tokens.size() == 7);

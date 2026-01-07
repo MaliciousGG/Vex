@@ -1,12 +1,11 @@
-﻿#include "Lexer.h"
-#include <iostream>
+﻿#include <iostream>
 
 // Forward declarations of all test functions
 void Test_Lexer_001_BasicKeywords();
 void Test_Lexer_002_AccessModifiers();
 void Test_Lexer_003_Types();
 
-int main(int argc, char* argv[]) {
+int main() {
     std::cout << "========================================" << "\n";
     std::cout << " VEX LEXER TEST SUITE" << "\n";
     std::cout << "========================================" << "\n\n";
