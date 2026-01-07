@@ -2,6 +2,7 @@
 
 #include <string>
 #include <map>
+#include <utility>
 
 #include "TokenEnums.h"
 
@@ -12,21 +13,20 @@ namespace Vex {
         int         Line;
         int         Column;
 
-        // Union usage for literals
         union {
             long long   IntValue;
             double      FloatValue;
         };
 
-        Token(const ETokenType Type, const std::string& Lexeme, int Line, int Column)
+        Token(const ETokenType Type, std::string  Lexeme, int Line, int Column)
             : Type(Type)
-            , Lexeme(Lexeme)
+            , Lexeme(std::move(Lexeme))
             , Line(Line)
             , Column(Column)
             , IntValue(0)
         {}
 
-        std::string ToString() const;
+        [[nodiscard]] std::string ToString() const;
     };
 
     static const std::map<std::string, ETokenType> Keywords = {

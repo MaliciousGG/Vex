@@ -2,6 +2,7 @@
 #include <cassert>
 
 #include "../Lexer.h"
+
 using namespace Vex;
 
 void Test_Lexer_002_AccessModifiers() {

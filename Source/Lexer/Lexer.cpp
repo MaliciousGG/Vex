@@ -135,7 +135,7 @@ namespace Vex {
         return Token(Type, Lexeme, Line, Column - Lexeme.length());
     }
 
-    Token Lexer::MakeToken(ETokenType Type, const std::string& Lexeme) const {
+    Token Lexer::MakeToken(const ETokenType Type, const std::string& Lexeme) const {
         return Token(Type, Lexeme, Line, Column - Lexeme.length());
     }
 
