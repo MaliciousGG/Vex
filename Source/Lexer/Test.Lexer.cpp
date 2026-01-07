@@ -6,6 +6,7 @@ void Test_Lexer_002_AccessModifiers();
 void Test_Lexer_003_Types();
 void Test_Lexer_004_GameTypes();
 void Test_Lexer_005_Operators();
+void Test_Lexer_001_NumberLiterals();
 
 int main() {
     std::cout << "========================================" << "\n";
@@ -17,7 +18,9 @@ int main() {
         Test_Lexer_002_AccessModifiers();    // STATUS::PASSED
         Test_Lexer_003_Types();              // STATUS::PASSED
         Test_Lexer_004_GameTypes();          // STATUS::PASSED
-        Test_Lexer_005_Operators();             // STATUS::IN PROGRESS
+        Test_Lexer_005_Operators();          // STATUS::PASSED
+        Test_Lexer_001_NumberLiterals();     // STATUS::PASSED
+
         std::cout << "\n";
 
         std::cout << "========================================" << "\n";

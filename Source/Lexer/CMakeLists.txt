@@ -22,6 +22,7 @@ add_executable(Test.Lexer
         Tests/Test.Lexer.003.cpp
         Tests/Test.Lexer.004.cpp
         Tests/Test.Lexer.005.cpp
+        Tests/Test.Lexer.006.cpp
 )
 
 target_link_libraries(Test.Lexer PRIVATE
