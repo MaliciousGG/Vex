@@ -17,6 +17,7 @@ void Test_Lexer_002_AccessModifiers() {
     }
 
     assert(Tokens.size() == 5);
+
     assert(Tokens[0].Type == ETokenType::PUBLIC);
     assert(Tokens[1].Type == ETokenType::PRIVATE);
     assert(Tokens[2].Type == ETokenType::PROTECTED);

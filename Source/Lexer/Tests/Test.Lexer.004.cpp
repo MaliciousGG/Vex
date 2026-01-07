@@ -6,7 +6,7 @@
 using namespace Vex;
 
 void Test_Lexer_004_GameTypes() {
-    std::cout << "--- Test 004: Game Type Keywords ---" << '\n';
+    std::cout << "--- Lexer Test 004: Game Type Keywords ---" << '\n';
 
     const std::string Code = "Vector2 Vector3 Vector4 Quat Color Transform";
     Lexer Lexer(Code);
@@ -17,6 +17,7 @@ void Test_Lexer_004_GameTypes() {
     }
 
     assert(Tokens.size() == 7);
+
     assert(Tokens[0].Type == ETokenType::VECTOR2);
     assert(Tokens[1].Type == ETokenType::VECTOR3);
     assert(Tokens[2].Type == ETokenType::VECTOR4);

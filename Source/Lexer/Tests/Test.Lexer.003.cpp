@@ -6,7 +6,7 @@
 using namespace Vex;
 
 void Test_Lexer_003_Types() {
-    std::cout << "--- Test 003: Type Keywords ---" << '\n';
+    std::cout << "--- Lexer Test 003: Type Keywords ---" << '\n';
 
     const std::string Code = "Int_8 Int_16 Int_32 Int_64 Uint_8 Float_32 Bool String";
     Lexer Lexer(Code);
@@ -17,6 +17,7 @@ void Test_Lexer_003_Types() {
     }
 
     assert(Tokens.size() == 9);
+
     assert(Tokens[0].Type == ETokenType::INT8);
     assert(Tokens[1].Type == ETokenType::INT16);
     assert(Tokens[2].Type == ETokenType::INT32);

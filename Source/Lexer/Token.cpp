@@ -152,7 +152,6 @@ namespace Vex {
             case ETokenType::QUESTION:          Stream << "QUESTION"; break;
             case ETokenType::QUESTION_DOT:      Stream << "QUESTION_DOT"; break;
             case ETokenType::DOUBLE_QUESTION:   Stream << "DOUBLE_QUESTION"; break;
-            case ETokenType::EXCLAIM:           Stream << "EXCLAIM"; break;
             case ETokenType::COLON:             Stream << "COLON"; break;
             case ETokenType::DOUBLE_COLON:      Stream << "DOUBLE_COLON"; break;
             case ETokenType::SEMICOLON:         Stream << "SEMICOLON"; break;

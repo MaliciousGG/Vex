@@ -144,7 +144,6 @@ namespace Vex {
         QUESTION,       // ?
         QUESTION_DOT,   // ?.
         DOUBLE_QUESTION,// ??
-        EXCLAIM,        // ! (null-forgiving)
         COLON,          // :
         DOUBLE_COLON,   // ::
         SEMICOLON,      // ;

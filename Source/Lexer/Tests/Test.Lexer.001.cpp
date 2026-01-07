@@ -18,6 +18,7 @@ void Test_Lexer_001_BasicKeywords() {
     }
 
     assert(Tokens.size() == 7);
+
     assert(Tokens[0].Type == ETokenType::DEFINE);
     assert(Tokens[1].Type == ETokenType::FETCH);
     assert(Tokens[2].Type == ETokenType::SET);
