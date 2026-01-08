@@ -5,7 +5,7 @@
 
 using namespace Vex;
 
-void Test_Lexer_001_NumberLiterals() {
+void Test_Lexer_006_NumberLiterals() {
     std::cout << "--- Lexer Test 006: Number Literals ---" << "\n";
 
     const std::string Code = "45 1000 3.14 69 540";

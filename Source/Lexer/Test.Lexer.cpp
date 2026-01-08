@@ -6,7 +6,8 @@ void Test_Lexer_002_AccessModifiers();
 void Test_Lexer_003_Types();
 void Test_Lexer_004_GameTypes();
 void Test_Lexer_005_Operators();
-void Test_Lexer_001_NumberLiterals();
+void Test_Lexer_006_NumberLiterals();
+void Test_Lexer_007_StringLiterals();
 
 int main() {
     std::cout << "========================================" << "\n";
@@ -14,12 +15,13 @@ int main() {
     std::cout << "========================================" << "\n\n";
 
     try {
-        Test_Lexer_001_BasicKeywords();      // STATUS::PASSED
-        Test_Lexer_002_AccessModifiers();    // STATUS::PASSED
-        Test_Lexer_003_Types();              // STATUS::PASSED
-        Test_Lexer_004_GameTypes();          // STATUS::PASSED
-        Test_Lexer_005_Operators();          // STATUS::PASSED
-        Test_Lexer_001_NumberLiterals();     // STATUS::PASSED
+        // Test_Lexer_001_BasicKeywords();      // STATUS::PASSED
+        // Test_Lexer_002_AccessModifiers();    // STATUS::PASSED
+        // Test_Lexer_003_Types();              // STATUS::PASSED
+        // Test_Lexer_004_GameTypes();          // STATUS::PASSED
+        // Test_Lexer_005_Operators();          // STATUS::PASSED
+        // Test_Lexer_006_NumberLiterals();     // STATUS::PASSED
+        // Test_Lexer_007_StringLiterals();     // STATUS::PASSED
 
         std::cout << "\n";
 
