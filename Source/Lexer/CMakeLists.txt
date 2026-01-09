@@ -14,7 +14,7 @@ target_include_directories(Vex.Lexer PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
-# Lexer test executable - combines all test files
+# Lexer test executable - combines test runner and all test files
 add_executable(Test.Lexer
         Test.Lexer.cpp
         Tests/Test.Lexer.001.cpp
@@ -24,6 +24,11 @@ add_executable(Test.Lexer
         Tests/Test.Lexer.005.cpp
         Tests/Test.Lexer.006.cpp
         Tests/Test.Lexer.007.cpp
+        Tests/Test.Lexer.008.cpp
+        Tests/Test.Lexer.009.cpp
+        Tests/Test.Lexer.010.cpp
+        Tests/Test.Lexer.011.cpp
+        Tests/Test.Lexer.012.cpp
 )
 
 target_link_libraries(Test.Lexer PRIVATE
